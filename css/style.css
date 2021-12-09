@@ -1,0 +1,237 @@
+/* Body And Base Properties */
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.landingPage {
+    background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.13), transparent), radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent);
+}
+/* Header */
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#hi {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 6rem;
+    margin: 0;
+    grid-area: title;
+    z-index: 1;
+}
+
+.homeButton {
+    width: 15%;
+}
+
+.paddingLeft {
+    padding-left: 3rem;
+    padding-top: 5rem;
+}
+img {
+    z-index: 1;
+    margin-right: 0;
+}
+
+a {
+    z-index: 1;
+}
+
+a:hover, a:focus {
+    outline: 1px solid grey;
+}
+
+
+
+/* Main Content */
+svg {
+    display: block;
+    margin: auto;
+}
+
+#starsOver {
+    background-color: white;
+    z-index: 2;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 4rem;
+}
+
+#starsOver h3 {
+    text-align: center;
+    font-size: 4rem;
+}
+#starsOver h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 8rem;
+}
+
+/* Code for Strengths */
+
+.strengthsPara {
+    width: 100%;
+    font-size: 1.75rem;
+}
+
+.strengths {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.strengthCol {
+    width: 30%;
+}
+
+/* Introduction Paragraph */
+.introductoryPara {
+    width: 75%;
+    text-align: left;
+    display: block;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+/* Portfolio Page */
+.previewProjects {
+    width: 100%;
+    background-color: #0a161f;
+    padding-top: 20rem;
+    padding-bottom: 5rem;
+
+}
+
+#frameWindow {
+    transition: all 0.2s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+}
+
+
+.expansion {
+    padding: 1rem;
+    transition: padding 0.25s ease-in-out;
+}
+
+.expansion:hover, .expansion:focus {
+    padding: 1.5rem;
+}
+
+.portfolioDesktopButton {
+    background-color: white;
+    text-decoration: none;
+    color: #0a161f;
+    border-radius: .2rem;
+}
+
+.portfolioDesktopButton:hover, .portfolioDesktopButton:focus {
+    color: #0a161f;
+}
+
+.bgGit {
+    background-image: url("../images/githubscrollingbanner.gif");
+    color: white;
+}
+
+.bgBelle {
+    background-image: url("../images/bellevillebanner.jpg");
+    color:rgba(41, 196, 255, 0)
+}
+
+.bgThis {
+    background-image: url("../images/thisVerySite.gif");
+    color: #FDDA0D;
+    -webkit-text-stroke: 1px #C4B454;
+}
+
+.bgGit:hover, .bgGit:focus {
+    color: rgba(61, 217, 88, 1);
+}
+
+.bgBelle:hover, .bgBelle:focus {
+    color: rgba(61, 217, 88, 0);
+}
+
+.bgThis:hover, .bgThis:focus {
+    color: #E49B0F;
+}
+.portfolioButton {
+    text-decoration: none;
+    width: 100%;
+    display: none;
+    height: 15rem;
+    text-align: center;
+    line-height: 15rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Contact Page */
+.howToReach {
+    width: 50%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.howToReach a {
+    color: #7393B3;
+    text-decoration: none;
+}
+
+.howToReach a:hover {
+    color: #6082B6;
+}
+/* Footer */
+footer {
+    background-color: #0a161f;
+    color: #FFFF;
+    padding: 3rem;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1100px) {
+    img {
+        display: none;
+    }
+
+    #hi {
+        width: 100%;
+        font-size: 4rem;
+    }
+
+    .homeButton {
+        width: 50%;
+    }
+
+    .strengthsFlex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .strengthCol {
+        width: 80%;
+    }
+
+    .howToReach {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .portfolioButton {
+        display: block;
+    }
+
+    #frameWindow {
+        display: none;
+    }
+}
